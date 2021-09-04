@@ -11,18 +11,16 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 	
-	public Parent root;
+    public Parent root;
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-
-		root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/dashboard.fxml"));
-    	
+	root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/dashboard.fxml"));
     	Scene scene = new Scene(root);
     	primaryStage.setResizable(true);
     	primaryStage.setScene(scene);
     	primaryStage.setTitle("Simple Inventory");
-		primaryStage.getIcons().add(new Image("/images/icon.png"));
+	primaryStage.getIcons().add(new Image("/images/icon.png"));
     	primaryStage.show();
     }
 
